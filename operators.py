@@ -1,3 +1,4 @@
+#operations
 a = 10
 b = 20
 print(a+b)
@@ -7,6 +8,7 @@ print(a/b)
 print(a%b)
 print(a**b)
 print(a//b)
+
 
 #simple calculator
 a = int(input("Enter first number:"))
@@ -26,6 +28,7 @@ avg = total/3
 print(total)
 print(avg)
 
+
 #shopping bill calculator
 price1 = float(input("Enter product 1 price:"))
 price2  = float(input("Enter product 2 price:"))
@@ -35,11 +38,13 @@ discount = total*0.10
 final_amount = total-discount
 print(final_amount)
 
+
 #salary calculator
 basic  = float(input("Enter basic salary:"))
 hra = basic*0.20
 da = basic*0.10
 gross_salary = basic+hra+da
+
 
 print("Basic salary:",basic)
 print("HRA:",hra)
