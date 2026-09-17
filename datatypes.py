@@ -81,12 +81,11 @@ a = [1, 2, 3]
 b = a.copy()
 print(b)
 
-#ratio elements in a list
-numbers = [10, 20, 30, 40, 50]
-print(numbers[1:4])
-print(numbers[:3])
-print(numbers[2:])
-print(numbers[::-1])
+#slicing: (start,stop,step) elements in a list
+numbers = [10, 20, 30, 40, 50, 60, 70, 80]
+print(numbers[1:4])    
+print(numbers[2:])     
+print(numbers[::-1])    
 
 #tuples in python
 #Tuple is a collection of multiple values that is ordered and cannot be changed after creation
@@ -103,8 +102,7 @@ print(student[2])
 print(student[3])
 
 #immutable nature of tuples
-student = ("Keerthi", 17, "python")
-student[1]=22
+student = ("keerthi",17,"python")
 #this gives an error because tuple is not changed
 
 #tuples are immutable 
@@ -139,17 +137,69 @@ print(subjects)
 
 #remove values in a set
 subjects = {"java", "python", "SQL"}
-subjects.removed("SQL")
+subjects.remove("SQL")
 print(subjects)
 
 #sets do not allow duplicate values
 numbers = {1, 2, 2, 3, 3, 3, 4}
 print(numbers)
 
+#dictionaries in python
+#dictionaty is a collection of key values that are unordered and mutable
+student = {"name": "keerthi",  "marks": 94, "subject": "python" , "age": 18,"course": "aiml"}
+print(student.keys())
+print(student.values())
+print(student.items())
 
-            
+#accessing elements in dictionary
+print(student["name"])
+print(student["age"])
+print(student["course"])
+
+#change values in a dictionary
+student["age"] = 18
+print(student["age"])
+
+#add new data to a dictionary 
+student["city"] = "vijayawada"
+print(student)
+
+#remove data 
+student.pop("city")
+print(student)
+
+#get() returns the values of the specified key
+print(student.get("name"))
+
+#update()updates the values of the specified key
+student.update({"age":17})
+
+#popitem() removes the last inserted key-value pair
+student = {"name": "keerthi","age":17,"course":"python"}
+student.popitem()
+
+#set default
+student = {"name": "keerthi"}
+student.setdefault("age",18)
+print(student)
+
+#clear method
+student.clear()
+print(student)
+
+#copy method
+student = {"name":"keerthi","age":17}
+new_student = student.copy()
+print(new_student)
+
+#order of evaluation(BODMAS)
+result = (10+5)*2
+print(result)
+
+result = 2+13*2
+print(result)
+
+                    
 
 
-
-
-
+        
