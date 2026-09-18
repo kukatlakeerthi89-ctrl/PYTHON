@@ -1,0 +1,5 @@
+print("kukatlakeerthi")
+print("Aiml")
+print("malla reddy")
+print("hello world")
+print("tirupathi")
